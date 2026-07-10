@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>合同会社CanvasCore.LLC - Official Website</title>
+    <style>
+        /* ==========================================================================
+           全体設定 & リセット
+           ========================================================================== */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: #0d0d0d;
+            color: #e6e6e6;
+            font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+            line-height: 1.8;
+            letter-spacing: 0.05em;
+        }
+        
+        /* ==========================================================================
+           ヒーローセクション
+           ========================================================================== */
+        header {
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(135deg, #141414 0%, #070707 100%);
+            border-bottom: 1px solid #262626;
+            padding: 20px;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #ffffff;
+            letter-spacing: 0.15em;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1rem;
+            color: #8c8c8c;
+        }
+
+        /* ==========================================================================
+           メインコンテンツレイアウト
+           ========================================================================== */
+        main {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        /* カテゴリーセクション */
+        section {
+            margin-bottom: 60px;
+        }
+        section h2 {
+            font-size: 1.5rem;
+            color: #ffffff;
+            margin-bottom: 24px;
+            border-left: 4px solid #ffffff;
+            padding-left: 12px;
+            letter-spacing: 0.1em;
+        }
+
+        /* レスポンシブグリッドシステム */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+        }
+
+        /* ==========================================================================
+           コンポーネント: カードスタイル
+           ========================================================================== */
+        .card {
+            background-color: #141414;
+            border: 1px solid #262626;
+            border-radius: 4px;
+            padding: 30px;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+        /* マウスホバー時の滑らかなアニメーション効果 */
+        .card:hover {
+            transform: translateY(-4px);
+            border-color: #404040;
+        }
+        .card h3 {
+            font-size: 1.2rem;
+            color: #ffffff;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .card p {
+            font-size: 0.95rem;
+            color: #cccccc;
+            white-space: pre-line;
+        }
+
+        /* 全幅表示用特殊カード（1カラム） */
+        .card-full {
+            grid-column: 1 / -1;
+        }
+
+        /* ポリシーカード専用デザイン */
+        .policy-card h3 {
+            border-bottom: 1px solid #262626;
+            padding-bottom: 10px;
+        }
+        .policy-tag {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            background-color: #262626;
+            color: #ffffff;
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 8px;
+        }
+
+        /* ==========================================================================
+           フッター
+           ========================================================================== */
+        footer {
+            background-color: #070707;
+            border-top: 1px solid #262626;
+            padding: 40px 20px;
+            text-align: center;
+            font-size: 0.85rem;
+            color: #666666;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ヘッダー / ビジュアル領域 -->
+    <header>
+        <h1>CanvasCore.LLC</h1>
+        <p>Beyond the Outline, Into the Core.</p>
+    </header>
+
+    <!-- メインコンテンツ領域 -->
+    <main>
+        
+        <!-- カテゴリー1: CORPORATE PROFILE（企業概要） -->
+        <section>
+            <h2>CORPORATE PROFILE</h2>
+            <div class="grid">
+                <!-- 会社情報カード -->
+                <div class="card">
+                    <h3>📊 会社概要</h3>
+                    <p><strong>社名:</strong> 合同会社CanvasCore.LLC<br>
+                    <strong>所在:</strong> 東京都千代田区紀尾井町4-1 ニューオータニガーデンコート10F<br>
+                    <strong>代表者:</strong> 吉浦 蒼空</p>
+                </div>
+                <!-- ミッションカード -->
+                <div class="card">
+                    <h3>🎯 MISSION</h3>
+                    <p>「個のクリエイティビティを覚醒させ、世界の輪郭を再定義する」
+
+私たちは、既成概念というキャンバスを塗り替え、一人ひとりが持つ論理の美しさと情熱を最大化させるための基盤（Core）を提供します。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- カテゴリー2: GREETINGS（ご挨拶） -->
+        <section>
+            <h2>GREETINGS</h2>
+            <div class="grid">
+                <!-- 代表者挨拶カード -->
+                <div class="card">
+                    <h3>👤 代表者よりご挨拶</h3>
+                    <p>CanvasCoreのWebサイトをご覧いただき、ありがとうございます。代表の吉浦蒼空です。
+
+私たちが生きる現代において、年齢や過去の経歴といった「属性」は、時に個人の本質を見えにくくさせるノイズになり得ます。私たちは、そうした表面的な情報に惑わされることなく、目の前にある「成果物のクオリティ」とその背景にある「美しい論理」だけを信じて突き進む組織でありたいと考えています。
+
+一人ひとりが主役となり、爆速で世界をアップデートしていく。その挑戦の場を、私たちは創り続けます。</p>
+                </div>
+                <!-- 組織挨拶カード -->
+                <div class="card">
+                    <h3>🏢 合同会社CanvasCore.LLCよりご挨拶</h3>
+                    <p>合同会社CanvasCore.LLCは、次世代のクリエイターや技術者が集い、それぞれの情熱を同期させることで、全く新しい価値を創造するクリエイティブカンパニーです。
+
+私たちは、未成年者をはじめとする多様な才能を預かる組織として、強固なコンプライアンスと防壁を敷き、内側の創造性を絶対的に守り抜くことを約束します。誰もが安心して牙を研ぎ、圧倒的な速度でイノベーションを起こせる、そんな理想的なエコシステムを社会に提示してまいります。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- カテゴリー3: CORE VISION & POLICY（ビジョンと行動指針） -->
+        <section>
+            <h2>CORE VISION & POLICY</h2>
+            <div class="grid">
+                <!-- Policy 01 カード -->
+                <div class="card policy-card">
+                    <h3><span class="policy-tag">01</span> UNTITLED</h3>
+                    <p>「クオリティだけが、自分の輪郭になる。」</p>
+                </div>
+                <!-- Policy 02 カード -->
+                <div class="card policy-card">
+                    <h3><span class="policy-tag">02</span> MONOLITH</h3>
+                    <p>「ブラックボックス。それが、最も美しい防壁。」</p>
+                </div>
+                <!-- Policy 03 カード -->
+                <div class="card policy-card">
+                    <h3><span class="policy-tag">03</span> OVERDRIVE</h3>
+                    <p>「指示を待つだけの歯車になるな。世界をリノベーションしろ。」</p>
+                </div>
+                <!-- Core Vision カード（全幅表示） -->
+                <div class="card card-full">
+                    <h3>CoreVision</h3>
+                    <p>UNTITLEDによって個の純粋な実力を引き出し、MONOLITHによってその才能と権利を完全に保護し、OVERDRIVEによって圧倒的な熱量と速度で社会に変革をもたらす。
+
+この3つの思想が三位一体となり、自律駆動型のクリエイターが世界をリノベーションし続ける未来こそが、CanvasCoreの目指す究極のビジョンです。</p>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- フッター領域 -->
+    <footer>
+        <p>&copy; 2026 CanvasCore.LLC All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
